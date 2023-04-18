@@ -1,26 +1,27 @@
 #include <stdio.h>
 
-const char *checkAge(int age)
-{
-  if (age == 20)
-    return "はたちです";
-  else if (age < 18)
-    return "未成年です";
-  else if (age >= 25)
-    return "被選挙権があります";
-  else
-    return "還暦ではありません";
-}
-
 int main()
 {
-  while (1)
-  {
-    int age;
-    printf("Enter an integer between 0 and 99 >> ");
-    scanf("%d", &age);
+  int age;
+  printf("Enter an integer between 0 and 99 >> ");
+  scanf("%d", &age);
 
-    printf("%s\n", checkAge(age));
+  if (age < 0 || age > 99)
+  {
+    printf("Invalid input\n");
+    return 1;
   }
+
+  if (age == 20)
+    printf("はたちです\n");
+  if (age < 18)
+    printf("未成年です\n");
+  if (age >= 25)
+    printf("被選挙権があります\n");
+  else
+    printf("還暦ではありません\n");
+
+  printf("\n");
+
   return 0;
 }
