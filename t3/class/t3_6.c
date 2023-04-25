@@ -3,7 +3,7 @@
 int main()
 {
   int n, m;
-  printf("nとmを入力してください: ");
+  printf("nとmを入力してください >> ");
   scanf("%d %d", &n, &m);
 
   for (int i = 0; i < n; i++)
