@@ -7,9 +7,18 @@ int main()
   printf("20000以下の正の整数を入力してください >> ");
   scanf("%d", &max);
 
-  while (total <= max)
+  if (max < 1 || max > 20000)
   {
-    n++;
+    printf("入力値が不正です。\n");
+    return 1;
+  }
+
+  for (n = 1; n <= max; n++)
+  {
+    if (total > max)
+    {
+      break;
+    }
     total += n;
   }
 
