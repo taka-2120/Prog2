@@ -4,6 +4,7 @@
     "*.yaml": "yaml",
     "*.xml": "xml",
     "*.tsx": "typescriptreact",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "ratio": "c"
   }
 }
