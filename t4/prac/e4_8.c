@@ -33,7 +33,7 @@ int main(void)
   char c, ck;
   int k;
   double x, y;
-  double n;
+  int n;
 
   c = 'f';
   k = 3;
@@ -43,7 +43,7 @@ int main(void)
   x = 2.0;
   n = 5;
   y = ssum(x, n);
-  printf("x = %g, n = %g, y = %f \n", x, n, y);
+  printf("x = %f, n = %d, y = %f \n", x, n, y);
 
   return 0;
 }

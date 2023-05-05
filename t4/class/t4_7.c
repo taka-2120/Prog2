@@ -11,8 +11,7 @@ int main(void)
 
   for (int i = 1; i <= 10; i++)
   {
-    result = powint(i);
-    printf("%dの3乗は%dです。\n", i, result);
+    printf("%dの3乗は%dです。\n", i,  powint(i));
   }
 
   return 0;
