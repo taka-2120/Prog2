@@ -30,22 +30,3 @@ int main()
 
   return 0;
 }
-
-double a;
-a = 0;
-
-double a = 1;
-
-double char_plus()
-{
-  return 4.5;
-}
-
-double char_plus_2()
-{
-  return 1000;
-}
-
-char a = "moji";
-
-char b = 'a';
