@@ -23,7 +23,7 @@ void bubbleSort(int a[], int n)
         a[j] = a[j - 1];
         a[j - 1] = tmp;
       }
-      printArray(a, n); // ソート途中の配列を表示
+      printArray(a, n);
     }
   }
 }
@@ -33,13 +33,13 @@ int main()
   int d[N] = {54, 28, 72, 9, 39, 44, 69, 15, 97, 88};
 
   printf("初期配列: ");
-  printArray(d, N); // 初期配列の表示
+  printArray(d, N);
 
   printf("\nソート中:\n");
   bubbleSort(d, N);
 
   printf("\nソート後: ");
-  printArray(d, N); // ソート後の配列の表示
+  printArray(d, N);
 
   return 0;
 }
