@@ -17,7 +17,7 @@ int main()
 
   for(int i = 1; i < 10; i++)
   {
-    last = recurrence(last, i);
+    last = recurrence(last, i - 1);
     printf("a_%d = %d\n", i, last);
   }
 

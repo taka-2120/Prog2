@@ -20,7 +20,6 @@ int main()
   {
     sum[i] = a[i] + b[i];
   }
-
   printf("ベクトルの和: (%d, %d, %d, %d)\n", sum[0], sum[1], sum[2], sum[3]);
 
   ip = 0;
@@ -28,7 +27,6 @@ int main()
   {
     ip += a[i] * b[i];
   }
-
   printf("ベクトルの内積: %d\n", ip);
 
   return 0;

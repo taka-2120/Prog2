@@ -22,8 +22,8 @@ void bubbleSort(int a[], int n)
         int tmp = a[j];
         a[j] = a[j - 1];
         a[j - 1] = tmp;
+        printArray(a, n);
       }
-      printArray(a, n);
     }
   }
 }

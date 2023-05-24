@@ -6,7 +6,7 @@
 int main()
 {
   int score[N];
-  int sum = 0;
+  double sum = 0;
   double average, variance, std_deviation;
 
   score[0] = 80;

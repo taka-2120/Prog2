@@ -14,7 +14,7 @@ int sos(int n)
 int main()
 {
   int input;
-  int i = 0, sum = 0;
+  int i = 1, sum = 0;
 
   printf("整数を入力してください >> ");
   scanf("%d", &input);
@@ -25,7 +25,7 @@ int main()
     i++;
   }
 
-  printf("%d: i = %d, s_%d = %d", input, i, i, sum);
+  printf("%d: i = %d, s_%d = %d", input, i - 1, i - 1, sum);
 
   return 0;
 }
