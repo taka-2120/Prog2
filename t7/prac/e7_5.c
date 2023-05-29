@@ -20,7 +20,7 @@ int main(void)
   };
 
   double min_dis = INFINITY;
-  int min_dis_seat[2];
+  int min_dis_seat[2] = {0, 0};
 
   for (int i = 0; i < MAX_SEAT; i++)
   {
