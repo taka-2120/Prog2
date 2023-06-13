@@ -21,8 +21,12 @@ const char *determine(int a, int b, int c)
 
   if (D == 0)
   {
-    printf("実数解は%dです。\n", x1);
-    return "1つの実数解があります";
+    if (x1 > 0)
+      return "正の解は1つです。";
+    else if (x1 < 0)
+      return "正の解はありません。";
+    else
+      return "解なし";
   }
 
   return "2つの実数解があります";
