@@ -4,8 +4,10 @@
     "*.yaml": "yaml",
     "*.xml": "xml",
     "*.tsx": "typescriptreact",
+    "*.md": "markdown",
     "stdio.h": "c",
-    "ratio": "c"
+    "ratio": "c",
+    "math.h": "c"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
