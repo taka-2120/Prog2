@@ -1,5 +1,6 @@
 #include <math.h>
 #include <stdio.h>
+#include <float.h>
 
 #define MAX_SEAT 10
 
@@ -27,8 +28,8 @@ int main(void)
 
   double x_dis, y_dis;
   double dis;
-  double max_dis = 0.0;
-  int max_dis_seat[2] = {0, 0};
+  double min_dis = DBL_MAX;
+  int min_dis_seat[2] = {0, 0};
 
   for (int i = 0; i < MAX_SEAT; i++)
   {
@@ -37,15 +38,15 @@ int main(void)
       x_dis = seat[i].x - seat[j].x;
       y_dis = seat[i].y - seat[j].y;
       dis = sqrt(x_dis * x_dis + y_dis * y_dis);
-      if (max_dis < dis)
+      if (min_dis >= dis)
       {
-        max_dis = dis;
-        max_dis_seat[0] = seat[i].no;
-        max_dis_seat[1] = seat[j].no;
+        min_dis = dis;
+        min_dis_seat[0] = seat[i].no;
+        min_dis_seat[1] = seat[j].no;
       }
     }
   }
-  printf("最も離れた座席は %d と %d です (距離 %f)\n", max_dis_seat[0], max_dis_seat[1], max_dis);
+  printf("最も近い座席は %d と %d です (距離 %f)\n", min_dis_seat[0], min_dis_seat[1], min_dis);
 
   return 0;
-}
+}  
