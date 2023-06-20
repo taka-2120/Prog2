@@ -28,7 +28,7 @@ int main(void)
   double x_dis, y_dis;
   double dis;
   double max_dis = 0.0;
-  int max_dis_seat[2];
+  int max_dis_seat[2] = {0, 0};
 
   for (int i = 0; i < MAX_SEAT; i++)
   {
