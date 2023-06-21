@@ -31,10 +31,10 @@ int main(void)
     char txt1[256];
     char txt2[256];
 
-    printf("文字列１を入力してください >>> ");
+    printf("文字列１を入力してください >> ");
     get_line(txt1, 256);
 
-    printf("文字列２を入力してください >>> ");
+    printf("文字列２を入力してください >> ");   
     get_line(txt2, 256);
 
     int str_diff = str_compare(txt1, txt2);
