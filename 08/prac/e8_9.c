@@ -6,7 +6,7 @@ void str_reverse_copy(char dst[], char src[])
     int length = strlen(src);
     dst[length] = '\0';
 
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < length; i++
     {
         dst[i] = src[length - i - 1];
     }
